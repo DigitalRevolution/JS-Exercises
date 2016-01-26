@@ -1,0 +1,29 @@
+// Answers to a question posed on Stack Overflow. JS does not have built in Matrices. 
+// There are libraries to do this kind of thing for you... 
+
+// Build a multidimensional array 
+
+var x = new Array(5);
+  for (var i = 0; i < x.length; i++) {
+    x[i] = [1,2,3,4,5];
+  }
+console.log(x);   
+
+// Build a scalable multidimensional array following this pattern: 
+
+// 01234
+// 10123
+// 21012
+// 32101
+// 43210
+
+var linear = [0,1,2,3,4,5,6,7,8,9];
+var dimensional = [];
+
+for (i=0; i<linear.length; i++) {
+    dimensional[i] = []; 
+    for (j=0; j<linear.length; j++) {
+    dimensional[i][j] = Math.abs(j-i);
+    }
+}
+console.log(dimensional);
