@@ -1,2 +1,2 @@
-# ascii
-Collection of Object Exercises based on ASCII Table
+# JS Exercises
+Repo of challenges, Stack Overflow Answers, and Logic Tests. 
